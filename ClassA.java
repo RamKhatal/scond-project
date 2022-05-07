@@ -1,27 +1,19 @@
 package Pkg1;
 
 public class ClassA {
-	int a;
-	String b;
-	public ClassA(int a,String b)      // constructor overloading
+
+	public static void main(String[] args) 
 	{
-		this.a=a;
-		this.b=b;
-		System.out.println(this.a);
-		System.out.println(this.b);
-	}
-	public ClassA(String a,int b)    // constructor overloading
-	{
-		System.out.println(a);
-		System.out.println(b);
-		
-	}
-
-	public static void main(String[] args) {
-		new ClassA(10,"velo");
-		new ClassA(12,"ram");
+		for(int i=1;i<=3;i++)
+			
+		{
+			System.out.println("======outer loop:"+i +"==========");
+			for(int j=1;j<=3;j++)
+			{
+				System.out.println("inner loop:"+j);
+			}	
+		}
 
 	}
-
 
 }
